@@ -1,4 +1,4 @@
-# 🔍 Hiring Bias Detector
+# Hiring Bias Detector
 
 > **NLP + BERT system to detect and fix gender, age, ability & cultural bias in job descriptions**
 
@@ -9,7 +9,7 @@
 
 ---
 
-## 🎯 The Problem
+## The Problem
 
 Biased language in job descriptions silently reduces applicant diversity — before a single interview happens.
 
@@ -22,7 +22,7 @@ Biased language in job descriptions silently reduces applicant diversity — bef
 
 ---
 
-## 🔬 What This Tool Does
+## What This Tool Does
 
 1. **Scans** any job description using a curated lexicon of 80+ biased phrases
 2. **Scores** bias severity per category (gender / age / ability / culture) on a 0–100 scale
@@ -33,7 +33,7 @@ Biased language in job descriptions silently reduces applicant diversity — bef
 
 ---
 
-## 📊 Bias Categories Detected
+## Bias Categories Detected
 
 | Category | Example Biased Phrase | Neutral Alternative |
 |---|---|---|
@@ -44,7 +44,7 @@ Biased language in job descriptions silently reduces applicant diversity — bef
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```
 📦 hiring-bias-detector/
@@ -61,7 +61,7 @@ Biased language in job descriptions silently reduces applicant diversity — bef
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # 1. Install dependencies
@@ -79,7 +79,7 @@ python bert_model.py
 
 ---
 
-## 🖥️ Streamlit Dashboard Features
+## Streamlit Dashboard Features
 
 | Tab | Features |
 |---|---|
@@ -89,7 +89,7 @@ python bert_model.py
 
 ---
 
-## 🤖 BERT Model
+## BERT Model
 
 The `bert_model.py` fine-tunes `bert-base-uncased` for binary bias classification:
 
@@ -103,7 +103,7 @@ Expected F1  : ~85%
 
 ---
 
-## 📈 Scoring Logic
+## Scoring Logic
 
 ```
 Bias Score (0–100) = Σ(severity_weight × match) / word_count × 100
@@ -122,7 +122,7 @@ Verdict thresholds:
 
 ---
 
-## 📊 Power BI Dashboard
+## Power BI Dashboard
 
 See `POWERBI_SETUP.md` for full setup instructions. Key visuals:
 - Bias score distribution by industry and role
@@ -132,7 +132,7 @@ See `POWERBI_SETUP.md` for full setup instructions. Key visuals:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 |---|---|
@@ -144,15 +144,3 @@ See `POWERBI_SETUP.md` for full setup instructions. Key visuals:
 | **Streamlit** | Interactive dashboard |
 | **Power BI** | Executive trends dashboard |
 
----
-
-## 📬 Author
-
-**Mahasweta Talik**
-- 📧 mahasweta005talik@gmail.com
-- 💼 [LinkedIn](https://linkedin.com/in/your-profile)
-- 🐙 [GitHub](https://github.com/your-username)
-
----
-
-*This project demonstrates NLP pipeline design, BERT fine-tuning, bias detection, and business dashboard creation — core skills for data science and AI/ML roles.*
